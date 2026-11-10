@@ -1,0 +1,5 @@
+rules,protocol,flagged normal runs,false-alarm run rate,flagged by R2,flagged by R5,flagged by R4
+R1-R5 (v1 default),learn = evaluate (v1 way),39/40,0.975,-,-,-
+R1-R5 (v1 default),learn 5 / evaluate 5 + fp (mean over 30 splits),34.0+-0.0/35,0.971+-0.000,R2 9.3,R5 15.0,R4 33.0
+"R1-R5, R4 scoped",learn = evaluate (v1 way),17/40,0.425,-,-,-
+"R1-R5, R4 scoped",learn 5 / evaluate 5 + fp (mean over 30 splits),20.5+-3.4/35,0.587+-0.096,R2 9.3,R5 15.0,R4 0.0

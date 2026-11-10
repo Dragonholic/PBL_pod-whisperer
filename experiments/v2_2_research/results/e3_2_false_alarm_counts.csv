@@ -1,0 +1,8 @@
+normal scenario,rule,"alerts (first split, K2)"
+fp_1,R2,20
+fp_1,R5,95
+fp_2,R1,1
+fp_2,R2,13
+fp_2,R5,2
+fp_3,R5,1
+normal,R5,1

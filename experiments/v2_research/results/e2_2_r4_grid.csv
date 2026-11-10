@@ -1,0 +1,13 @@
+R4 scope,N,W (s),attack runs flagged (of 80),normal runs flagged (of 40),evasion_1,evasion_2
+none,5,10,78,38,10/10,8/10
+none,5,60,78,38,10/10,8/10
+none,5,300,78,38,10/10,8/10
+none,20,10,0,0,0/10,0/10
+none,20,60,10,0,0/10,0/10
+none,20,300,20,0,10/10,0/10
+known apps,5,10,30,0,0/10,0/10
+known apps,5,60,40,0,10/10,0/10
+known apps,5,300,40,0,10/10,0/10
+known apps,20,10,0,0,0/10,0/10
+known apps,20,60,10,0,0/10,0/10
+known apps,20,300,20,0,10/10,0/10

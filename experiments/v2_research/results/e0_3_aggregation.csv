@@ -1,0 +1,7 @@
+rules,merge window (s),alerts,incidents,reduction,incident precision (policy B)
+R1-R5 (v1 default),0,9489,9489,0.0000,0.547
+R1-R5 (v1 default),2,9489,6219,0.3446,0.376
+R1-R5 (v1 default),120,9489,3759,0.6039,0.554
+"R1-R5, R4 scoped",0,6629,6629,0.0000,0.784
+"R1-R5, R4 scoped",2,6629,3383,0.4897,0.692
+"R1-R5, R4 scoped",120,6629,3113,0.5304,0.668

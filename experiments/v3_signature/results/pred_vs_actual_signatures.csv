@@ -1,0 +1,14 @@
+scenario,S1,S2,S3,S4,S5
+normal,pred - / actual - (0 alerts in stream),pred - / actual - (0 alerts in stream),pred - / actual - (0 alerts in stream),pred - / actual - (0 alerts in stream),pred - / actual - (0 alerts in stream)
+fp_1,pred - / actual 0/10,pred - / actual 0/10,pred - / actual 0/10,pred - / actual 0/10,pred - / actual 0/10
+fp_2,pred - / actual 0/10,pred - / actual 0/10,pred - / actual 0/10,pred - / actual 0/10,pred - / actual 0/10
+fp_3,pred - / actual 0/10,pred - / actual 0/10,pred - / actual 0/10,pred - / actual 0/10,pred - / actual 0/10
+abnormal_1,pred - / actual 0/10,pred - / actual 0/10,pred - / actual 0/10,pred - / actual 0/10,pred - / actual 0/10
+abnormal_2,pred - / actual 0/10,pred - / actual 0/10,pred - / actual 0/10,pred - / actual 0/10,pred - / actual 0/10
+abnormal_3,pred O / actual 10/10,pred O / actual 10/10,pred O / actual 10/10,pred - / actual 0/10,pred - / actual 0/10
+k8s_1,pred - / actual 0/10,pred - / actual 0/10,pred O / actual 10/10,pred - / actual 0/10,pred - / actual 0/10
+k8s_2,pred O / actual 10/10,pred - / actual 0/10,pred - / actual 0/10,pred - / actual 0/10,pred - / actual 0/10
+k8s_3,pred - / actual 0/10,pred - / actual 0/10,pred - / actual 0/10,pred O / actual 10/10,pred - / actual 0/10
+evasion_1,pred O / actual 10/10,pred O / actual 10/10,pred O / actual 0/10,pred - / actual 0/10,pred - / actual 0/10
+evasion_2,pred - / actual 0/10,pred - / actual 0/10,pred - / actual 0/10,pred - / actual 0/10,pred - / actual 0/10
+abnormal_4,pred - / actual 0/10,pred - / actual 0/10,pred - / actual 0/10,pred - / actual 0/10,pred O / actual 10/10

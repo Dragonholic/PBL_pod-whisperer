@@ -1,0 +1,5 @@
+pair (false-alarm run rate over 30 splits),mean difference,paired t-test
+K1 vs K2,+0.385,"t=21.56, df=29, p=2.1e-19"
+K2 vs K3,+0.000,identical in every split (no test possible)
+K2 vs K4,+0.000,identical in every split (no test possible)
+K3 vs K4,+0.000,identical in every split (no test possible)

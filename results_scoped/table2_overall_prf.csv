@@ -1,0 +1,2 @@
+TP,FP,FN,TN,Precision,Recall,F1
+80,17,0,23,0.825,1.000,0.904

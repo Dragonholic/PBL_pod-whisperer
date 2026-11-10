@@ -1,0 +1,7 @@
+combination,alerts/hour,change vs K2 per hour,alerts by rule,R1u tier
+K2,308,+0,"R1:13, R2:231, R5:65",0
+K2+F1,52,-256,"R1:13, R2:13, R5:26",0
+K2+F2,295,-13,"R2:231, R5:65",0
+K2+F3,243,-65,"R1:13, R2:231",0
+K5a,29,-279,"R1:13, R5:16",0
+K5b,13,-295,R2:13,0

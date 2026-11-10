@@ -1,0 +1,5 @@
+rule,attack runs flagged (of 80),normal runs flagged (of 40),run precision,alert precision (B),runs flagged by scenario
+R6 alone,30,0,1.000,1.000,"abnormal_3:10, k8s_2:10, evasion_1:10"
+"R6 alone, scoped",30,0,1.000,1.000,"abnormal_3:10, k8s_2:10, evasion_1:10"
+R4 alone (v1),78,38,0.672,0.047,"abnormal_1:10, abnormal_2:10, abnormal_3:10, k8s_1:10, k8s_2:10, k8s_3:10, evasion_1:10, evasion_2:8, normal:10, fp_1:10, fp_2:8, fp_3:10"
+"R4 alone, scoped",30,0,1.000,0.904,"abnormal_2:10, abnormal_3:10, k8s_2:10"

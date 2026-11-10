@@ -1,0 +1,11 @@
+id,prediction,actual,result
+Q1,K5a alerts/hour <= 50% of K2,K5a 29 vs K2 308 (9%),correct
+Q2,K5a <= K5b <= K2 alerts/hour,29 / 13 / 308,wrong
+Q3,F2 removes R1 false alarms in restart and replica2 runs,"K2 R1-flagged runs restart 3/5, replica2 3/5; K5b 0/5, 0/5",correct
+Q4,evasion_2 stays detected by R5 under F3 (10/10),10/10,correct
+Q5,K6 run recall = 1.000 (8 old scenarios + abnormal_4); K6 normal alerts/hour = K5b,recall 1.000; K6 13 vs K5b 13,correct
+Q6,K6-r3 run recall = 1.000,1.000,correct
+Q7,K2 detects abnormal_4 10/10; S5 10/10,K2 10/10; S5 10/10,correct
+Q8,fp_1 flagged in >= 8/10 runs under K5b,10/10,correct
+Q9,K7 changes no alert count (tags only),K7 13 vs K6 13; multistep incidents in attack runs 124,correct
+Q10,S1/S2/S3 fire 10/10 where predicted O,see signature table,wrong

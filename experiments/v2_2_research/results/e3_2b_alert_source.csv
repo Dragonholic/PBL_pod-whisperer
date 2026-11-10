@@ -1,0 +1,7 @@
+rule,alert source,"alerts (K2, 30 splits)",share of the rule's alerts
+R1,our apps (frontend/backend/db),30,1.000
+R2,our apps (frontend/backend/db),30,0.026
+R2,"system components (host, coredns, falco, apiserver, ...)",1120,0.974
+R3,"system components (host, coredns, falco, apiserver, ...)",18,1.000
+R5,our apps (frontend/backend/db),927,0.297
+R5,"system components (host, coredns, falco, apiserver, ...)",2192,0.703

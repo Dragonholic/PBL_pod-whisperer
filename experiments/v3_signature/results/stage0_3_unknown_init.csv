@@ -1,0 +1,13 @@
+scenario,side,identity_num,labels,verdict,other_side,flows
+abnormal_3,dst,,reserved:unknown,DROPPED,?/kube-dns,2
+abnormal_3,dst,,reserved:unknown,DROPPED,?/?,1
+evasion_1,dst,,reserved:unknown,DROPPED,?/?,5
+evasion_1,dst,,reserved:unknown,DROPPED,?/kube-dns,4
+evasion_1,dst,,reserved:unknown,DROPPED,?/hubble-relay,2
+evasion_1,dst,,reserved:unknown,DROPPED,?/victim,2
+evasion_1,dst,,reserved:unknown,DROPPED,?/local-path-provisioner,2
+evasion_1,dst,,reserved:unknown,DROPPED,?/frontend,1
+evasion_1,dst,,reserved:unknown,DROPPED,?/db,1
+evasion_2,dst,,reserved:unknown,DROPPED,?/?,1
+evasion_2,dst,,reserved:unknown,DROPPED,?/db,1
+fp_2,dst,,reserved:unknown,DROPPED,?/backend,1

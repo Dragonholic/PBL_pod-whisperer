@@ -1,0 +1,5 @@
+combination (fixed in advance),false-alarm run rate (held-out normal + fp),run recall,alert precision (policy B)
+K1 v1 default: R1-R5,0.971+-0.000,1.000+-0.000,0.541+-0.016
+"K2 v1 scoped: R1-R5, R4 scoped",0.587+-0.096,1.000+-0.000,0.769+-0.032
+"K3 R1,R2,R3,R5,R6 (R4 replaced by R6)",0.587+-0.096,1.000+-0.000,0.767+-0.032
+"K4 R1-R6, R4 and R6 scoped",0.587+-0.096,1.000+-0.000,0.770+-0.032

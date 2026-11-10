@@ -1,0 +1,27 @@
+# Raw Hubble flow dumps and the manifest/baseline derived from them are
+# regenerated every time collect.sh / detector.py run, and a full 10x
+# collection across all scenarios can easily reach tens of MB -- too large
+# (and too easy to accidentally commit wholesale) to track directly.
+#
+# A small smoke-test sample IS committed under data/sample_run/ (see
+# docs/findings.md and STATUS.md) as evidence the collect -> detect ->
+# evaluate pipeline works end-to-end; that directory is intentionally
+# exempted below.
+data/*.json
+data/manifest.csv
+!data/sample_run/
+!data/sample_run/*.json
+!data/sample_run/manifest.csv
+
+# results/ outputs (tables, PNGs) from evaluate.py are small for the smoke
+# test and are committed as evidence; re-running experiment_a/experiment_b
+# against a full 10x dataset will overwrite them, which is expected.
+
+.hubble-portforward.log
+.hubble-pf.log
+
+__pycache__/
+*.pyc
+data/*.json.stderr
+data_e1/
+data_v3/

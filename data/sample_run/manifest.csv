@@ -1,0 +1,9 @@
+scenario,run,label,script,start_time,end_time,data_file
+normal,1,normal,category2/normal.sh,2026-10-27T03:23:39Z,2026-10-27T03:23:48Z,data/sample_run/normal_1.json
+normal,2,normal,category2/normal.sh,2026-10-27T03:23:48Z,2026-10-27T03:23:57Z,data/sample_run/normal_2.json
+abnormal_1,1,attack,category2/abnormal_1.sh,2026-10-27T03:24:12Z,2026-10-27T03:24:18Z,data/sample_run/abnormal_1_1.json
+abnormal_1,2,attack,category2/abnormal_1.sh,2026-10-27T03:24:19Z,2026-10-27T03:24:25Z,data/sample_run/abnormal_1_2.json
+k8s_1,1,attack,scenarios/k8s_1_apiserver.sh,2026-10-27T03:24:31Z,2026-10-27T03:24:49Z,data/sample_run/k8s_1_1.json
+k8s_1,2,attack,scenarios/k8s_1_apiserver.sh,2026-10-27T03:24:49Z,2026-10-27T03:25:06Z,data/sample_run/k8s_1_2.json
+k8s_3,1,attack,scenarios/k8s_3_cross_ns.sh,2026-10-27T03:25:11Z,2026-10-27T03:25:28Z,data/sample_run/k8s_3_1.json
+k8s_3,2,attack,scenarios/k8s_3_cross_ns.sh,2026-10-27T03:25:28Z,2026-10-27T03:25:36Z,data/sample_run/k8s_3_2.json

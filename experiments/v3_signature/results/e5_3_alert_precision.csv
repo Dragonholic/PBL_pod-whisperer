@@ -1,0 +1,10 @@
+combination,attack alerts labelled B,attack alerts not labelled,alerts in 40 new normal runs,alert precision
+K2,4986,1347,193,0.764
+K5a,4986,83,46,0.975
+K5b,4986,137,25,0.969
+K6,5632,137,25,0.972
+K6-r3,4181,137,25,0.963
+K7,5632,137,25,0.972
+K2+F1,4986,779,109,0.849
+K2+F2,4986,1313,182,0.769
+K2+F3,4986,639,98,0.871

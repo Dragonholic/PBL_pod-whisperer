@@ -1,0 +1,7 @@
+comparison,unit,flagged rate A,flagged rate B,paired t-test over 30 learn/evaluate splits
+K2 vs K5a,normal_runs,0.684,0.481,"t=23.82, df=29, p=1.4e-20"
+K2 vs K5a,long_windows,0.395,0.084,"t=9.55, df=29, p=1.8e-10"
+K2 vs K5b,normal_runs,0.684,0.486,"t=31.31, df=29, p=6.6e-24"
+K2 vs K5b,long_windows,0.395,0.089,"t=12.68, df=29, p=2.3e-13"
+K5b vs K6,normal_runs,0.486,0.486,all differences equal (test not possible)
+K5b vs K6,long_windows,0.089,0.089,all differences equal (test not possible)

@@ -1,0 +1,8 @@
+# F1 allowlist (initial list from the 2.2 E3-2 samples; matched on stable identity, not pod name).
+# A selector 'reserved:X' matches a Hubble reserved label; anything else matches the stable id
+# (ns/app, ns/k8s-app, ns/workload). Flows outside this list keep alerting.
+allowlist:
+  - {src: [reserved:host],            dst: [falco/falco],            port: 8765, proto: [TCP]}
+  - {src: [kube-system/kube-dns],     dst: [reserved:world],         port: 53,   proto: [UDP, TCP]}
+  - {src: [pbl-security/frontend, pbl-security/backend, pbl-security/db, falco/falco],
+     dst: [kube-system/kube-dns],     port: 53,                      proto: [UDP, TCP]}

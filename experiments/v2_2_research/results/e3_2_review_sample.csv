@@ -1,0 +1,12 @@
+scenario,run,rule,src,dst,port,verdict,time
+normal,8,R5,reserved:host,falco/falco-wbrvn,8765,FREQUENCY_ANOMALY,2026-11-02T04:29:48.583491777Z
+fp_1,1,R5,pbl-security/frontend,kube-system/coredns-6f6b679f8f-h5w7m,53,FREQUENCY_ANOMALY,2026-11-02T04:51:24.977009840Z
+fp_1,1,R5,pbl-security/frontend,kube-system/coredns-6f6b679f8f-sf4ws,53,FREQUENCY_ANOMALY,2026-11-02T04:51:24.977009840Z
+fp_1,5,R2,falco/falco-wjvhk,kube-system/coredns-6f6b679f8f-sf4ws,53,FORWARDED,2026-11-02T04:52:07.463494987Z
+fp_1,5,R2,falco/falco-wjvhk,kube-system/coredns-6f6b679f8f-h5w7m,53,FORWARDED,2026-11-02T04:52:07.464852163Z
+fp_2,1,R2,kube-system/coredns-6f6b679f8f-h5w7m,reserved:world,53,FORWARDED,2026-11-02T04:53:35.332448493Z
+fp_2,1,R2,kube-system/coredns-6f6b679f8f-h5w7m,reserved:world,53,FORWARDED,2026-11-02T04:53:35.332587847Z
+fp_2,2,R1,backend,reserved:unknown,,DROPPED,2026-11-02T04:53:42.034113346Z
+fp_2,2,R5,reserved:host,falco/falco-wbrvn,8765,FREQUENCY_ANOMALY,2026-11-02T04:53:44.086048348Z
+fp_2,5,R5,reserved:kube-apiserver,falco/falco-9jvfn,8765,FREQUENCY_ANOMALY,2026-11-02T04:53:59.498140794Z
+fp_3,2,R5,reserved:host,falco/falco-wbrvn,8765,FREQUENCY_ANOMALY,2026-11-02T04:54:42.847319741Z

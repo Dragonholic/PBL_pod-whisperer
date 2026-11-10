@@ -1,0 +1,5 @@
+R3 port list,attack runs flagged (of 80),normal runs flagged (of 40),alert precision (B),attack runs flagged by scenario
+v1 list,40,0,1.000,"abnormal_3:10, k8s_1:10, k8s_2:10, evasion_1:10"
+official table + NodePort range,40,0,1.000,"abnormal_3:10, k8s_1:10, k8s_2:10, evasion_1:10"
+official table + NodePort + 443,40,0,1.000,"abnormal_3:10, k8s_1:10, k8s_2:10, evasion_1:10"
+"v1 list minus non-Kubernetes ports (22, 3306, 6379)",40,0,1.000,"abnormal_3:10, k8s_1:10, k8s_2:10, evasion_1:10"

@@ -1,0 +1,204 @@
+{
+  "paths": [
+    "[\"backend\", \"reserved:unknown\", null]",
+    "[\"falco/falco-wjvhk\", \"kube-system/coredns-6f6b679f8f-h5w7m\", 53]",
+    "[\"falco/falco-wjvhk\", \"kube-system/coredns-6f6b679f8f-sf4ws\", 53]",
+    "[\"kube-system/coredns-6f6b679f8f-h5w7m\", \"reserved:kube-apiserver\", 6443]",
+    "[\"kube-system/coredns-6f6b679f8f-sf4ws\", \"reserved:kube-apiserver\", 6443]",
+    "[\"kube-system/hubble-relay-7788d98f8d-zh9hq\", \"reserved:host\", 4244]",
+    "[\"kube-system/hubble-relay-7788d98f8d-zh9hq\", \"reserved:kube-apiserver\", 4244]",
+    "[\"kube-system/hubble-relay-7788d98f8d-zh9hq\", \"reserved:remote-node\", 4244]",
+    "[\"local-path-storage/local-path-provisioner\", \"reserved:kube-apiserver\", 6443]",
+    "[\"pbl-security/backend\", \"kube-system/coredns-6f6b679f8f-h5w7m\", 53]",
+    "[\"pbl-security/backend\", \"kube-system/coredns-6f6b679f8f-sf4ws\", 53]",
+    "[\"pbl-security/backend\", \"pbl-security/db\", 80]",
+    "[\"pbl-security/frontend\", \"kube-system/coredns-6f6b679f8f-h5w7m\", 53]",
+    "[\"pbl-security/frontend\", \"kube-system/coredns-6f6b679f8f-sf4ws\", 53]",
+    "[\"pbl-security/frontend\", \"pbl-security/backend\", 80]",
+    "[\"reserved:host\", \"falco/falco-wbrvn\", 8765]",
+    "[\"reserved:host\", \"falco/falco-wjvhk\", 8765]",
+    "[\"reserved:host\", \"kube-system/hubble-relay-7788d98f8d-zh9hq\", 4222]",
+    "[\"reserved:host\", \"kube-system/hubble-ui-84bc58749-zlxgl\", 8081]",
+    "[\"reserved:host\", \"pbl-security/backend\", 80]",
+    "[\"reserved:host\", \"pbl-security/db\", 80]",
+    "[\"reserved:host\", \"pbl-security/frontend\", 80]",
+    "[\"reserved:host\", \"reserved:health\", null]",
+    "[\"reserved:host\", \"reserved:health\", 4240]",
+    "[\"reserved:kube-apiserver\", \"falco/falco-9jvfn\", 8765]",
+    "[\"reserved:kube-apiserver\", \"kube-system/coredns-6f6b679f8f-h5w7m\", 8080]",
+    "[\"reserved:kube-apiserver\", \"kube-system/coredns-6f6b679f8f-h5w7m\", 8181]",
+    "[\"reserved:kube-apiserver\", \"kube-system/coredns-6f6b679f8f-sf4ws\", 8080]",
+    "[\"reserved:kube-apiserver\", \"kube-system/coredns-6f6b679f8f-sf4ws\", 8181]",
+    "[\"reserved:kube-apiserver\", \"reserved:health\", null]",
+    "[\"reserved:kube-apiserver\", \"reserved:health\", 4240]",
+    "[\"reserved:remote-node\", \"reserved:health\", null]",
+    "[\"reserved:remote-node\", \"reserved:health\", 4240]"
+  ],
+  "frequency": {
+    "[\"kube-system/hubble-relay-7788d98f8d-zh9hq\", \"reserved:host\", 4244]": {
+      "mean": 2.5,
+      "stddev": 0.5,
+      "n_runs": 2
+    },
+    "[\"pbl-security/frontend\", \"kube-system/coredns-6f6b679f8f-sf4ws\", 53]": {
+      "mean": 12.0,
+      "stddev": 3.0,
+      "n_runs": 2
+    },
+    "[\"kube-system/hubble-relay-7788d98f8d-zh9hq\", \"reserved:remote-node\", 4244]": {
+      "mean": 2.0,
+      "stddev": 0.0,
+      "n_runs": 2
+    },
+    "[\"pbl-security/frontend\", \"pbl-security/backend\", 80]": {
+      "mean": 36.0,
+      "stddev": 0.0,
+      "n_runs": 2
+    },
+    "[\"reserved:host\", \"pbl-security/db\", 80]": {
+      "mean": 25.0,
+      "stddev": 5.0,
+      "n_runs": 2
+    },
+    "[\"reserved:host\", \"pbl-security/frontend\", 80]": {
+      "mean": 25.0,
+      "stddev": 5.0,
+      "n_runs": 2
+    },
+    "[\"pbl-security/backend\", \"kube-system/coredns-6f6b679f8f-sf4ws\", 53]": {
+      "mean": 4.5,
+      "stddev": 1.5,
+      "n_runs": 2
+    },
+    "[\"pbl-security/backend\", \"pbl-security/db\", 80]": {
+      "mean": 30.0,
+      "stddev": 0.0,
+      "n_runs": 2
+    },
+    "[\"reserved:kube-apiserver\", \"falco/falco-9jvfn\", 8765]": {
+      "mean": 7.5,
+      "stddev": 0.5,
+      "n_runs": 2
+    },
+    "[\"reserved:host\", \"falco/falco-wbrvn\", 8765]": {
+      "mean": 8.0,
+      "stddev": 0.0,
+      "n_runs": 2
+    },
+    "[\"reserved:host\", \"falco/falco-wjvhk\", 8765]": {
+      "mean": 8.0,
+      "stddev": 0.0,
+      "n_runs": 2
+    },
+    "[\"reserved:host\", \"pbl-security/backend\", 80]": {
+      "mean": 24.5,
+      "stddev": 4.5,
+      "n_runs": 2
+    },
+    "[\"pbl-security/frontend\", \"kube-system/coredns-6f6b679f8f-h5w7m\", 53]": {
+      "mean": 15.0,
+      "stddev": 3.0,
+      "n_runs": 2
+    },
+    "[\"pbl-security/backend\", \"kube-system/coredns-6f6b679f8f-h5w7m\", 53]": {
+      "mean": 4.5,
+      "stddev": 1.5,
+      "n_runs": 2
+    },
+    "[\"reserved:host\", \"reserved:health\", 4240]": {
+      "mean": 1.0,
+      "stddev": 0.0,
+      "n_runs": 2
+    },
+    "[\"reserved:host\", \"kube-system/hubble-relay-7788d98f8d-zh9hq\", 4222]": {
+      "mean": 10.0,
+      "stddev": 0.0,
+      "n_runs": 2
+    },
+    "[\"reserved:host\", \"kube-system/hubble-ui-84bc58749-zlxgl\", 8081]": {
+      "mean": 8.5,
+      "stddev": 0.5,
+      "n_runs": 2
+    },
+    "[\"reserved:kube-apiserver\", \"reserved:health\", 4240]": {
+      "mean": 1.0,
+      "stddev": 0.0,
+      "n_runs": 1
+    },
+    "[\"kube-system/coredns-6f6b679f8f-sf4ws\", \"reserved:kube-apiserver\", 6443]": {
+      "mean": 1.0,
+      "stddev": 0.0,
+      "n_runs": 1
+    },
+    "[\"reserved:remote-node\", \"reserved:health\", 4240]": {
+      "mean": 11.0,
+      "stddev": 1.0,
+      "n_runs": 2
+    },
+    "[\"reserved:kube-apiserver\", \"reserved:health\", null]": {
+      "mean": 1.0,
+      "stddev": 0.0,
+      "n_runs": 1
+    },
+    "[\"reserved:remote-node\", \"reserved:health\", null]": {
+      "mean": 6.0,
+      "stddev": 2.0,
+      "n_runs": 2
+    },
+    "[\"backend\", \"reserved:unknown\", null]": {
+      "mean": 1.0,
+      "stddev": 0.0,
+      "n_runs": 1
+    },
+    "[\"reserved:host\", \"reserved:health\", null]": {
+      "mean": 1.0,
+      "stddev": 0.0,
+      "n_runs": 2
+    },
+    "[\"kube-system/hubble-relay-7788d98f8d-zh9hq\", \"reserved:kube-apiserver\", 4244]": {
+      "mean": 1.5,
+      "stddev": 0.5,
+      "n_runs": 2
+    },
+    "[\"reserved:kube-apiserver\", \"kube-system/coredns-6f6b679f8f-h5w7m\", 8080]": {
+      "mean": 4.0,
+      "stddev": 0.0,
+      "n_runs": 1
+    },
+    "[\"reserved:kube-apiserver\", \"kube-system/coredns-6f6b679f8f-h5w7m\", 8181]": {
+      "mean": 4.0,
+      "stddev": 0.0,
+      "n_runs": 1
+    },
+    "[\"reserved:kube-apiserver\", \"kube-system/coredns-6f6b679f8f-sf4ws\", 8181]": {
+      "mean": 5.0,
+      "stddev": 0.0,
+      "n_runs": 1
+    },
+    "[\"reserved:kube-apiserver\", \"kube-system/coredns-6f6b679f8f-sf4ws\", 8080]": {
+      "mean": 5.0,
+      "stddev": 0.0,
+      "n_runs": 1
+    },
+    "[\"local-path-storage/local-path-provisioner\", \"reserved:kube-apiserver\", 6443]": {
+      "mean": 1.0,
+      "stddev": 0.0,
+      "n_runs": 1
+    },
+    "[\"falco/falco-wjvhk\", \"kube-system/coredns-6f6b679f8f-h5w7m\", 53]": {
+      "mean": 4.0,
+      "stddev": 0.0,
+      "n_runs": 1
+    },
+    "[\"falco/falco-wjvhk\", \"kube-system/coredns-6f6b679f8f-sf4ws\", 53]": {
+      "mean": 4.0,
+      "stddev": 0.0,
+      "n_runs": 1
+    },
+    "[\"kube-system/coredns-6f6b679f8f-h5w7m\", \"reserved:kube-apiserver\", 6443]": {
+      "mean": 1.0,
+      "stddev": 0.0,
+      "n_runs": 1
+    }
+  }
+}

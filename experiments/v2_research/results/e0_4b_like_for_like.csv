@@ -1,0 +1,4 @@
+rules,rule set,"fp_1-3 flagged, learn 10","fp_1-3 flagged, learn 5","normal flagged, learn 10","normal flagged, learn 5"
+"R1-R5, R4 scoped",any rule,17/30,18.3+-2.0/30,0/10 (learned on),2.20+-1.60/5 (held out)
+"R1-R5, R4 scoped",R2 only,7/30,8.5+-2.6/30,0/10 (learned on),0.73+-1.21/5 (held out)
+"R1-R5, R4 scoped",R5 only,11/30,13.0+-2.7/30,0/10 (learned on),2.00+-1.57/5 (held out)

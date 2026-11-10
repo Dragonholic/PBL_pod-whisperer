@@ -1,0 +1,69 @@
+# Configuration for detector.py and evaluate.py
+# Paths are relative to the detection/ directory (i.e. the directory this
+# file lives in), unless an absolute path is given.
+
+namespace: pbl-security
+
+paths:
+  data_dir: data
+  results_dir: experiments/v2_research/results
+  baseline_file: data/baseline.json
+  manifest_file: data/manifest.csv
+
+detection:
+  # R4 fan-out: number of distinct (dest,port) pairs from one source app
+  # within `window_seconds` that trips the fan-out rule.
+  window_seconds: 10
+  fanout_threshold: 5
+  # Limit R4 to sources in known_apps (drops kubelet/infra fan-out noise).
+  # false = legacy unscoped behaviour (results in docs/ were produced with it).
+  r4_scope_known_apps: false
+
+  # R3 sensitive port: control-plane / data-plane ports that are suspicious
+  # when NOT part of an app's known baseline path.
+  sensitive_ports:
+    - 22      # SSH
+    - 443     # HTTPS / kube-apiserver (Service port)
+    - 6443    # kube-apiserver real port on a kind control-plane node -- Cilium's
+              # eBPF kube-proxy replacement DNATs kubernetes.default.svc:443 /
+              # the apiserver ClusterIP:443 to <node-ip>:6443 *before* Hubble
+              # observes the flow, so probes against the Service/ClusterIP on
+              # 443 are actually seen here as destination_port=6443 against the
+              # control-plane node's real IP. See docs/findings.md.
+    - 2379    # etcd client
+    - 2380    # etcd peer
+    - 10250   # kubelet API
+    - 10255   # kubelet read-only (legacy)
+    - 3306    # MySQL
+    - 6379    # Redis
+
+  # R5 frequency (optional): same-path flow count in a window must exceed
+  # baseline_mean + k * baseline_stddev to trigger.
+  frequency:
+    enabled: true
+    k_sigma: 3
+
+# App labels considered part of this lab's workload (k8s:app=<name> in
+# Hubble flow JSON). Used by detector.py to identify endpoints by app label
+# rather than by (ephemeral) Pod IP.
+known_apps:
+  - frontend
+  - backend
+  - db
+
+# Experiment A grid (detector.py / evaluate.py --mode experiment_a)
+experiment_a:
+  fanout_threshold_values: [3, 5, 10]
+  window_seconds_values: [5, 10, 30]
+
+# Experiment B rule-subset ablation (evaluate.py --mode experiment_b)
+experiment_b:
+  rule_subsets:
+    - name: "R1"
+      rules: ["R1"]
+    - name: "R1+R2"
+      rules: ["R1", "R2"]
+    - name: "R1-3"
+      rules: ["R1", "R2", "R3"]
+    - name: "R1-4"
+      rules: ["R1", "R2", "R3", "R4"]

@@ -1,0 +1,55 @@
+# v3 signatures (AI draft from the user's "3차 실험 - 문제점 보완 규칙 제안" page; the user
+# gave up designing their own signatures). Request direction only (is_reply false),
+# verdict is ignored (an attempt counts even when the policy drops it).
+# Match keys (see v3_core.sig_match):
+#   dport_in, dst_ip, src_res_none_of, dst_res_any_of, src_in, src_ns, dst_ns_not
+# Identity names: reserved labels as shown by Hubble (host, remote-node, kube-apiserver).
+signatures:
+  - id: S1
+    name: workload to kubelet API
+    attack_technique: T1613 (Container and Resource Discovery)
+    match:
+      src_res_none_of: [host, remote-node, kube-apiserver]
+      dst_res_any_of: [host, remote-node, kube-apiserver]
+      dport_in: [10250]            # 10255 is an option, not in the default
+    exceptions: {}
+    severity: high
+    source: MITRE ATT&CK T1613 (Hildegard); NSA/CISA Kubernetes Hardening Guide v1.2 Tables I-II; Kubernetes kubelet authn/authz doc
+  - id: S2
+    name: etcd access
+    attack_technique: T1613
+    match:
+      dport_in: [2379, 2380]
+      src_res_none_of: [kube-apiserver]
+    exceptions: {}
+    severity: high
+    source: NSA/CISA Kubernetes Hardening Guide v1.2 (etcd, Table I)
+  - id: S3
+    name: app workload to API server
+    attack_technique: T1613
+    match:
+      src_in: [pbl-security/frontend, pbl-security/backend, pbl-security/db]
+      dst_res_any_of: [kube-apiserver]
+      dport_in: [443, 6443]
+    exceptions: {}
+    severity: high
+    source: MITRE ATT&CK T1613; NSA/CISA Kubernetes Hardening Guide v1.2 p.36-37
+  - id: S4
+    name: namespace boundary crossing
+    attack_technique: lateral movement (NSA/CISA hardening guide)
+    match:
+      src_ns: pbl-security
+      dst_ns_not: pbl-security
+    exceptions:
+      dst_kapp_port:
+        - {kapp: kube-dns, port: 53}
+    severity: medium
+    source: NSA/CISA Kubernetes Hardening Guide v1.2 p.14, p.16
+  - id: S5
+    name: cloud instance metadata access
+    attack_technique: T1552.005 (Cloud Instance Metadata API)
+    match:
+      dst_ip: 169.254.169.254
+    exceptions: {}
+    severity: high
+    source: MITRE ATT&CK T1552.005 (Hildegard); NSA/CISA Kubernetes Hardening Guide v1.2 p.21

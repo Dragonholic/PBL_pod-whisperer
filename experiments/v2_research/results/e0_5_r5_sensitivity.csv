@@ -1,0 +1,13 @@
+learning runs,k sigma,false-alarm set,R5 false-alarm run rate,R5 detects evasion_2,R5 detects any attack
+3,2,fp_1-3 + held-out normal,0.573+-0.134,1.00+-0.00,0.844+-0.059
+3,3,fp_1-3 + held-out normal,0.526+-0.159,1.00+-0.00,0.828+-0.062
+3,4,fp_1-3 + held-out normal,0.491+-0.155,1.00+-0.00,0.814+-0.062
+3,5,fp_1-3 + held-out normal,0.480+-0.151,1.00+-0.00,0.808+-0.066
+5,2,fp_1-3 + held-out normal,0.470+-0.094,1.00+-0.00,0.801+-0.036
+5,3,fp_1-3 + held-out normal,0.419+-0.110,1.00+-0.00,0.776+-0.042
+5,4,fp_1-3 + held-out normal,0.406+-0.108,1.00+-0.00,0.752+-0.047
+5,5,fp_1-3 + held-out normal,0.397+-0.108,1.00+-0.00,0.747+-0.050
+10,2,fp_1-3 only (no held-out normal),0.367+-0.000,1.00+-0.00,0.750+-0.000
+10,3,fp_1-3 only (no held-out normal),0.367+-0.000,1.00+-0.00,0.750+-0.000
+10,4,fp_1-3 only (no held-out normal),0.333+-0.000,1.00+-0.00,0.700+-0.000
+10,5,fp_1-3 only (no held-out normal),0.333+-0.000,1.00+-0.00,0.700+-0.000

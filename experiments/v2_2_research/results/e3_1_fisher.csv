@@ -1,0 +1,5 @@
+"shift (K2 R1-R5, R4 scoped, learn 5)",flagged rate,original held-out rate,"Fisher exact (pooled over splits, rough guide only)"
+later,0.693,0.440,p=1.5e-05
+rounds,1.000,0.440,p=6.9e-33
+restart,0.880,0.440,p=3.5e-16
+replica2,1.000,0.440,p=6.9e-33

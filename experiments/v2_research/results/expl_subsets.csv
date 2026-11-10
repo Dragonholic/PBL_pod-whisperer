@@ -1,0 +1,7 @@
+"rules (exploratory, chosen after seeing results)",attack runs flagged,normal runs flagged,run precision,run recall,alert precision (B),attack scenarios not fully caught,normal flagged by scenario
+R1,71/80,1/40,0.986,0.887,0.987,evasion_2,fp_2:1
+R1+R3,71/80,1/40,0.986,0.887,0.993,evasion_2,fp_2:1
+R1+R3+R6,71/80,1/40,0.986,0.887,0.993,evasion_2,fp_2:1
+R1+R5,80/80,12/40,0.870,1.000,0.684,none,"fp_1:10, fp_2:2"
+R1+R3+R5+R6,80/80,12/40,0.870,1.000,0.804,none,"fp_1:10, fp_2:2"
+R1+R2+R3+R5+R6,80/80,17/40,0.825,1.000,0.782,none,"fp_1:10, fp_2:7"

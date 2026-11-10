@@ -1,0 +1,3 @@
+drop_reason_desc,drop_reason,flows,by_scenario
+POLICY_DENIED,133,1748,abnormal_1:40; abnormal_2:120; abnormal_3:842; evasion_1:386; k8s_1:200; k8s_2:120; k8s_3:40
+UNSUPPORTED_L3_PROTOCOL,139,23,abnormal_3:3; evasion_1:17; evasion_2:2; fp_2:1

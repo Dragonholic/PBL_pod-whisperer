@@ -1,0 +1,13 @@
+scenario,label,runs,R1,R2,R3,R4,R5
+abnormal_1,attack,10,10,10,0,10,0
+abnormal_2,attack,10,10,10,0,10,10
+abnormal_3,attack,10,10,10,10,10,10
+evasion_1,attack,10,10,10,10,10,10
+evasion_2,attack,10,1,1,0,8,10
+fp_1,normal,10,0,1,0,10,10
+fp_2,normal,10,1,6,0,8,1
+fp_3,normal,10,0,0,0,10,0
+k8s_1,attack,10,10,10,10,10,10
+k8s_2,attack,10,10,10,10,10,10
+k8s_3,attack,10,10,10,0,10,0
+normal,normal,10,0,0,0,10,0

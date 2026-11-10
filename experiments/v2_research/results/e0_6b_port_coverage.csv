@@ -1,0 +1,5 @@
+R3 list,alerts (all true),malicious paths covered,malicious paths,path recall (B),scan port in list?
+v1 list,1548,620,680,0.912,22:Y 443:Y 2379:Y 3306:Y 6379:Y 6443:Y 10250:Y 10255:Y
+official table + NodePort,664,220,680,0.324,22:n 443:n 2379:Y 3306:n 6379:n 6443:Y 10250:Y 10255:n
+official + 443,864,310,680,0.456,22:n 443:Y 2379:Y 3306:n 6379:n 6443:Y 10250:Y 10255:n
+"v1 minus non-Kubernetes (22, 3306, 6379)",924,340,680,0.500,22:n 443:Y 2379:Y 3306:n 6379:n 6443:Y 10250:Y 10255:Y
